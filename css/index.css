@@ -1,0 +1,49 @@
+body {
+    background-color: #1875ae;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.board-title {
+    font-weight: bold;
+    color: white;
+    margin-left: 12px;
+}
+
+.card, .list {
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    display: inline-block;
+    margin: 3px 10px 3px 10px;
+}
+
+.card-text, .add-a-text {
+    margin-left: 12px;
+}
+
+.add-a-text {
+    color: gray;
+}
+
+.title-text {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.list {
+    background-color: #ddd;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.highlight {
+    background-color: yellow;
+}
