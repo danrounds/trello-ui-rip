@@ -72,3 +72,7 @@ a {
     background-color: lightgreen;
     color: white;
 }
+
+.add-a-button:active {
+    background-color: #0a5;
+}
