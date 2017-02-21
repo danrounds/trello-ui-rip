@@ -25,12 +25,12 @@ a {
     margin: 3px 10px 3px 10px;
 }
 
-.card-text, .add-a-text {
-    margin-left: 12px;
+.card:hover {
+    background-color: lightyellow;
 }
 
-.add-a-text {
-    color: gray;
+.card-text {
+    margin-left: 12px;
 }
 
 .title-text {
@@ -44,6 +44,31 @@ a {
     margin-left: 10px;
 }
 
-.highlight {
-    background-color: yellow;
+.add-a-card {
+    /* margin-left: 10px; */
+    margin: 3px 10px 10px 10px;
+}
+
+.add-a-text, .add-a-button {
+    border-radius: 4px;
+    border: none;
+}
+
+.add-a-text {
+    height: 24px;
+    width: 230px;
+    padding-left: 6px;
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+.add-a-button {
+    padding: 0 8px 0 8px;
+    height: 27px;
+    background-color: #eee;
+}
+
+.add-a-button:hover {
+    background-color: lightgreen;
+    color: white;
 }
