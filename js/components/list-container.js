@@ -25,16 +25,17 @@ export default class ListContainer extends React.Component {
     }
 
     onAddInputChanged(e) {
-        console.log(e.target.value);
-        this.state.currentEntryVal = e.target.value;
+        this.setState({
+            currentEntryVal: e.target.value
+        });
     }
 
     onAddSubmit(e) {
         e.preventDefault();
-        console.log(this.state.currentEntryVal);
-        this.state.list.push(<Card text={this.state.currentEntryVal} />);
-        console.log(this.state.list);
-        this.forceUpdate();
+        this.setState({
+            list: this.state.list.concat(
+                <Card text={this.state.currentEntryVal} />)
+        });
     }
 
     render() {
