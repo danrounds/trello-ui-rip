@@ -26,16 +26,18 @@ export default class ListContainer extends React.Component {
 
     onAddInputChanged(e) {
         this.setState({
-            currentEntryVal: e.target.value
+            currentEntryVal: e.target.value.trim()
         });
     }
 
     onAddSubmit(e) {
         e.preventDefault();
-        this.setState({
-            list: this.state.list.concat(
-                <Card text={this.state.currentEntryVal} />)
-        });
+        if (this.state.currentEntryVal) {
+            this.setState({
+                list: this.state.list.concat(
+                    <Card text={this.state.currentEntryVal} />)
+            });
+        }
     }
 
     render() {
