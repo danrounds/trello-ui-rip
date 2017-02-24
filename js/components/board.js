@@ -7,14 +7,21 @@ const cards = [['This is a card', 'Here goes some text', 'and here is some more'
 
 export default function Board(props) {
     const board = [];
-    for (let i in props.lists) {
-        board.push(<ListContainer title={props.lists[i]}
+    for (let i in props.listTitles) {
+        board.push(<ListContainer title={props.listTitles[i]}
                    cards={cards[i]}/>);
     }
+    // return (
+    //     <div className="board">
+    //       <h2 className="board-title">Title goes here</h2>
+    //       {board}
+    //     </div>
+    // );
     return (
-        <div className="board">
-          <h2 className="board-title">Title goes here</h2>
-          {board}
+            <div className="board">
+            <h2 className="board-title">{props.boardTitle}</h2>
+            {board}
         </div>
     );
+
 }
