@@ -11,12 +11,6 @@ export default function Board(props) {
         board.push(<ListContainer title={props.listTitles[i]}
                    cards={cards[i]}/>);
     }
-    // return (
-    //     <div className="board">
-    //       <h2 className="board-title">Title goes here</h2>
-    //       {board}
-    //     </div>
-    // );
     return (
             <div className="board">
             <h2 className="board-title">{props.boardTitle}</h2>
